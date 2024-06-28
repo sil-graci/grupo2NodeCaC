@@ -168,6 +168,60 @@ border-radius: 10px;
   display: block;
 }
 
+#resultProduct{
+  margin-bottom: 100px;
+}
+
+/*----------------------------------------------------------------------*/
+/* Pag del frontend para post put delete y create productos */
+/*----------------------------------------------------------------------*/
+.productosForm {
+  margin: 0 auto 60px; 
+  display: block;  
+}
+
+
+.menu.prod .menuProductos {
+  color: #ff7d00;
+  background-color: #001524;
+  border-radius: 10px;
+  cursor: default;
+
+}
+#formEditar{
+  margin-bottom: 100px;
+  
+}
+
+.form-group input,
+.form-group textarea {
+    border-width: 2px;
+    border-color: #15616d;
+    border-style: solid;
+}
+
+.form-group input:focus,
+.form-group textarea:focus{
+border: 3px solid #15616D;
+outline: none;
+box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+ }
+.form-group textarea{
+  margin-bottom: 20px;
+}
+
+.oculto {
+  display: none !important;
+}
+
+#btnAgregarProducto{
+  margin-top: 15px;
+  margin-bottom: 0px;
+}
+
+#contenedor-productos{
+  margin-bottom: 100px;
+}
 
 /*--------------------------------------------------*/
 /*Estilo de la grilla para pantallas de tablets*/
