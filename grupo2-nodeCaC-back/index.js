@@ -3,6 +3,8 @@ const app = express();
 require('dotenv').config();
 const cors = require('cors');
 const db = require ("./data/db.js")
+const jwt = require('jsonwebtoken');
+const authRoutes=require("./routes/authRoutes")
 const usuariosRoutes = require('./routes/usuariosRouter'); 
 const productosRoutes = require('./routes/productosRouter');
 const pedidosRoutes= require('./routes/pedidosRouter');
@@ -20,6 +22,7 @@ app.get ("/",(req,res)=>{
 app.use('/usuarios', usuariosRoutes);
 app.use('/productos', productosRoutes);
 app.use('/pedidos', pedidosRoutes);
+app.use('/auth',authRoutes);
 
 const conexionDB = async ()=>{
     try {
